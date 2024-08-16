@@ -1,6 +1,6 @@
 # AWS ESK System Monitor Application
 
-image
+![app](https://github.com/user-attachments/assets/89157c8b-5039-41cd-abb6-dff2b697ee46)
 
 ## Steps to deploy Application in EKS
 
@@ -267,7 +267,7 @@ resource "aws_ecr_repository" "system_monitor_app" {
     > [!WARNING]
     > Make sure to edit the name of the image on line 23 with your ECR image Uri in `manifests/deployment.yaml`
 
-image
+    ![service](https://github.com/user-attachments/assets/7a06dfc5-47d4-443a-bfe4-174ea036ebf3)
 
 13. Open the browser and enter the external-IP in address bar (Eg: `<account-id>.us-east-1.elb.amazonaws.com:5000`)
 
