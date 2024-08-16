@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: system-monitor
+  labels:
+    app: system-monitor
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: system-monitor
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 3
+  template:
+    metadata:
+      labels:
+        app: system-monitor
+    spec:
+      containers:
+        - name: system-monitor
+          image: 146855485831.dkr.ecr.us-east-1.amazonaws.com/system_monitor_app:latest
