@@ -270,7 +270,7 @@ resource "aws_ecr_repository" "system_monitor_app" {
 ![service](https://github.com/user-attachments/assets/e9b219e3-4c16-44ce-a922-a2dee1df1cd9)
 
 
-13. Open the browser and enter the external-IP in address bar (Eg: `<account-id>.us-east-1.elb.amazonaws.com:5000`)
+13. Open the browser and enter the external-IP in address bar (Eg: [http://\<account-id\>.us-east-1.elb.amazonaws.com:5000](http://\<account-id\>.us-east-1.elb.amazonaws.com:5000))
 
 14. Destroy the project resources<br>
     `$ terraform destroy -auto-approve`
@@ -289,9 +289,9 @@ $ minikube tunnel
 $ kubectl get service
 ```
 
-This will enable to access the application on <external-ip>:5000. Navigate to http://<external-ip>:5000 on your browser to access the application.
+This will enable to access the application on \<external-ip>\:5000. Navigate to [http://\<external-ip>\:5000](http://\<external-ip>\:5000) on your browser to access the application.
 
-#### If insted of LoadBalance if someone use CLusterIP use following commands to access the service in kubernetes cluster in local machine
+#### Instead of LoadBalance if someone use CLusterIP use following commands to access the service in kubernetes cluster in local machine
 
 ```
 $ kubectl get service
