@@ -267,7 +267,8 @@ resource "aws_ecr_repository" "system_monitor_app" {
 > [!WARNING]
 > Make sure to edit the name of the image on line 23 with your ECR image Uri in `manifests/deployment.yaml`
 
-    ![service](https://github.com/user-attachments/assets/7a06dfc5-47d4-443a-bfe4-174ea036ebf3)
+![service](https://github.com/user-attachments/assets/e9b219e3-4c16-44ce-a922-a2dee1df1cd9)
+
 
 13. Open the browser and enter the external-IP in address bar (Eg: `<account-id>.us-east-1.elb.amazonaws.com:5000`)
 
@@ -277,7 +278,7 @@ resource "aws_ecr_repository" "system_monitor_app" {
 > [!CAUTION]
 > Make sure you have delete the ECR image first in order to destroy the ECR repository
 
-    **Verify everything is cleaned up and destroyed**
+**Verify everything is cleaned up and destroyed**
 
 ## Deploy the application locally
 
