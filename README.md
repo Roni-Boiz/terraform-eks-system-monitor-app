@@ -20,8 +20,8 @@
     Default output format [None]: json
     ```
 
-    > [!TIP]
-    > Check user is configured correctly<br>`$ aws iam list-users`
+> [!TIP]
+> Check user is configured correctly<br>`$ aws iam list-users`
 
 5. Install [Terraform](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
 
@@ -236,8 +236,8 @@ resource "aws_ecr_repository" "system_monitor_app" {
     $ docker push <ecr_repo_uri>:<tag>
     ```
 
-    > [!TIP]
-    > All the required code snippets to push the image to ECR is provided by the AWS ECR `push commands` buton in ECR repository. Please modify the image name according to your image name.
+> [!TIP]
+> All the required code snippets to push the image to ECR is provided by the AWS ECR `push commands` buton in ECR repository. Please modify the image name according to your image name.
 
 12. Deploy the application in EKS kubernetes cluster
 
@@ -264,8 +264,8 @@ resource "aws_ecr_repository" "system_monitor_app" {
     $ kubectl get service
     ```
 
-    > [!WARNING]
-    > Make sure to edit the name of the image on line 23 with your ECR image Uri in `manifests/deployment.yaml`
+> [!WARNING]
+> Make sure to edit the name of the image on line 23 with your ECR image Uri in `manifests/deployment.yaml`
 
     ![service](https://github.com/user-attachments/assets/7a06dfc5-47d4-443a-bfe4-174ea036ebf3)
 
@@ -274,8 +274,8 @@ resource "aws_ecr_repository" "system_monitor_app" {
 14. Destroy the project resources<br>
     `$ terraform destroy -auto-approve`
 
-    > [!CAUTION]
-    > Make sure you have delete the ECR image first in order to destroy the ECR repository
+> [!CAUTION]
+> Make sure you have delete the ECR image first in order to destroy the ECR repository
 
     **Verify everything is cleaned up and destroyed**
 
